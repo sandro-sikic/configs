@@ -26,3 +26,4 @@
 - [GitUi](https://github.com/extrawurst/gitui)
 - [KDash](https://github.com/kdash-rs/kdash)
 - [Termscp](https://github.com/veeso/termscp)
+- [Ncdu](https://dev.yorhel.nl/ncdu)
