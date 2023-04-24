@@ -15,11 +15,6 @@
 			},
 			"env": [
 				{
-					"name": "MYSQL_DATABASE_PASSWORD",
-					"label": "Database root password",
-					"description": "Password used by the MySQL root user."
-				},
-				{
 					"name": "HOSTNAME",
 					"label": "Website Hostname",
 					"description": "Url for nginx proxy redirect to."
@@ -39,11 +34,6 @@
 				"stackfile": "portainer/stacks/wordpress/docker-compose.yml"
 			},
 			"env": [
-				{
-					"name": "MYSQL_DATABASE_PASSWORD",
-					"label": "Database root password",
-					"description": "Password used by the MySQL root user."
-				},
 				{
 					"name": "HOSTNAME",
 					"label": "Website Hostname",
