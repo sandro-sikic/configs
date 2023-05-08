@@ -18,7 +18,7 @@ config.keys = {
   },
 }
 
-config.use_ime = false
+config.send_composed_key_when_left_alt_is_pressed = true
 
 config.colors = {
   tab_bar = {
