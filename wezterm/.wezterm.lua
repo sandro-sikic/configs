@@ -6,17 +6,19 @@ config.font = wezterm.font 'FiraCode Nerd Font'
 config.color_scheme = 'Catppuccin Mocha'
 
 config.keys = {
-  { 
-    key = 'v', 
-    mods = 'CTRL', 
-    action = act.PasteFrom 'Clipboard' 
+  {
+    key = 'v',
+    mods = 'CTRL|SHIFT',
+    action = act.PasteFrom 'Clipboard'
   },
   {
     key = 'c',
-    mods = 'CTRL',
+    mods = 'CTRL|SHIFT',
     action = wezterm.action.CopyTo 'ClipboardAndPrimarySelection',
   },
 }
+
+config.use_ime = false
 
 config.colors = {
   tab_bar = {
