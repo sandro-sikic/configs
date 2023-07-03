@@ -14,4 +14,4 @@ dbgate:
     USER_con1: ${DATABASE_USER:-postgres}
     PASSWORD_con1: ${DATABASE_PASSWORD:-postgres}
     PORT_con1: ${DATABASE_PORT:-5432}
-    ENGINE_con2: postgres@dbgate-plugin-postgres	
+    ENGINE_con1: postgres@dbgate-plugin-postgres	
