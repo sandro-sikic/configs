@@ -4,7 +4,7 @@ dbgate:
   logging:
     driver: none
   ports:
-    - 4001:3000
+    - 3001:3000
   volumes:
     - dbgate:/root/.dbgate
   environment:
