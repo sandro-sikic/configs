@@ -19,6 +19,7 @@
 
 # Text-based user interface
 
+- [Gitui](https://github.com/extrawurst/gitui)
 - [Ranger](https://github.com/ranger/ranger)
 - [Docker](https://github.com/moncho/dry)
 - [NeoVim](https://github.com/neovim/neovim)
