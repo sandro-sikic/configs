@@ -27,3 +27,4 @@
 - [KDash](https://github.com/kdash-rs/kdash)
 - [Termscp](https://github.com/veeso/termscp)
 - [Ncdu](https://dev.yorhel.nl/ncdu)
+- [NPM-check](https://www.npmjs.com/package/npm-check)
