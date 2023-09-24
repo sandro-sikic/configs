@@ -2,26 +2,6 @@
 	"version": "2",
 	"templates": [
 		{
-			"type": 2,
-			"title": "Wordpress",
-			"description": "Wordpress setup with a MySQL database",
-			"note": "Deploys a Wordpress instance connected to a MySQL database.",
-			"categories": ["CMS"],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-			"repository": {
-				"url": "https://github.com/sandro-sikic/configs",
-				"stackfile": "portainer/stacks/wordpress/docker-stack.yml"
-			},
-			"env": [
-				{
-					"name": "HOSTNAME",
-					"label": "Website Hostname",
-					"description": "Url for nginx proxy redirect to."
-				}
-			]
-		},
-		{
 			"type": 3,
 			"title": "Wordpress",
 			"description": "Wordpress setup with a MySQL database",
