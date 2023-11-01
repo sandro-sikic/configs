@@ -20,6 +20,31 @@
 					"description": "Url for nginx proxy redirect to."
 				}
 			]
+		},
+		{
+			"type": 2,
+			"title": "Static site",
+			"description": "Static site with nginx, host any folder on local machine, read only",
+			"note": "Deploys a Nginx instance with mounted local volume in read only mode.",
+			"categories": ["STATIC"],
+			"platform": "linux",
+			"logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-nginx-logo.png",
+			"repository": {
+				"url": "https://github.com/sandro-sikic/configs",
+				"stackfile": "portainer/stacks/static_host/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "FOLDER_LOCATION",
+					"label": "Folder location",
+					"description": "Location of the folder to be mounted and proxied."
+				},
+				{
+					"name": "HOSTNAME",
+					"label": "Website Hostname",
+					"description": "Url for nginx proxy redirect to."
+				}
+			]
 		}
 	]
 }
