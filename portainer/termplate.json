@@ -35,9 +35,9 @@
 			},
 			"env": [
 				{
-					"name": "FOLDER_LOCATION",
-					"label": "Folder location",
-					"description": "Location of the folder to be mounted and proxied."
+					"name": "ZIPPED_SITE_LINK",
+					"label": "Zipped site link",
+					"description": "Location of the zipped file to be mounted and proxied."
 				},
 				{
 					"name": "HOSTNAME",
