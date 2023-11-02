@@ -37,7 +37,7 @@
 				{
 					"name": "ZIPPED_SITE_LINK",
 					"label": "Zipped site link",
-					"description": "Location of the zipped file to be mounted and proxied."
+					"description": "Url of the zipped file to be mounted and proxied."
 				},
 				{
 					"name": "HOSTNAME",

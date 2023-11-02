@@ -7,7 +7,7 @@ services:
       - data:/data
       - ./entrypoint.sh:/entrypoint.sh:ro
     environment:
-      FOLDER_LOCATION: ${FOLDER_LOCATION}
+      ZIPPED_SITE_LINK: ${ZIPPED_SITE_LINK}
     command: bash /entrypoint.sh
 
   nginx:
