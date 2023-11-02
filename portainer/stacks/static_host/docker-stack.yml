@@ -8,7 +8,12 @@ services:
       - ./entrypoint.sh:/entrypoint.sh:ro
     environment:
       ZIPPED_SITE_LINK: ${ZIPPED_SITE_LINK}
-    command: bash /entrypoint.sh
+    command:
+      [
+        'bash',
+        '-c',
+        'rm -r /download; mkdir /download; rm -r /data/*; wget $ZIPPED_SITE_LINK -O /download/site.zip; unzip /download/site.zip -d /data/',
+      ]
 
   nginx:
     image: nginx:latest
