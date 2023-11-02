@@ -5,14 +5,11 @@ services:
     image: bash:latest
     volumes:
       - data:/data
-      - ./entrypoint.sh:/entrypoint.sh:ro
-    environment:
-      ZIPPED_SITE_LINK: ${ZIPPED_SITE_LINK}
     command:
       [
         'bash',
         '-c',
-        'rm -r /download; mkdir /download; rm -r /data/*; wget $ZIPPED_SITE_LINK -O /download/site.zip; unzip /download/site.zip -d /data/',
+        'rm -r /download; mkdir /download; rm -r /data/*; wget ${ZIPPED_SITE_LINK} -O /download/site.zip; unzip /download/site.zip -d /data/',
       ]
 
   nginx:
