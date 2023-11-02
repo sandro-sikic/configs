@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  bash:
+  download_and_unzip:
     image: bash:latest
     volumes:
       - data:/data
