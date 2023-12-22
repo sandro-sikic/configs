@@ -10,17 +10,17 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-      MYSQL_RANDOM_ROOT_PASSWORD: true
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
     networks:
       - default
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:6.0.3-php8.1-apache
     volumes:
       - wordpress:/var/www/html
       - /root/wordpress_custom_php.ini:/usr/local/etc/php/conf.d/php.ini:ro
-    ports:
-      - 80
+      - /root/wordpress_plugins:/usr/src/wordpress/wp-content/plugins
+      - /root/wordpress_themes:/usr/src/wordpress/wp-content/themes
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
