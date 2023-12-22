@@ -15,13 +15,11 @@ services:
       - default
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:6.0.3-php8.1-apache
     volumes:
       - wordpress:/var/www/html
       - /root/wordpress_custom_php.ini:/usr/local/etc/php/conf.d/php.ini:ro
       - /root/wordpress_plugins:/usr/src/wordpress/wp-content/plugins
-    ports:
-      - 80
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
