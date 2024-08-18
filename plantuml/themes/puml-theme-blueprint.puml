@@ -1,6 +1,6 @@
 !$THEME = "blueprint"
 
-!$BGCOLOR = "#003153"
+!$BGCOLOR = "#060606"
 !$FGCOLOR = "#FFFFFF"
 
 !ifndef $FONT_NAME
@@ -18,8 +18,8 @@
     FontName $FONT_NAME
     HyperLinkColor $FGCOLOR
     LineColor $FGCOLOR
-    LineThickness 1
-    Margin 5
+    LineThickness 0.5
+    Margin 10
   }
   caption {
     LineThickness 0
