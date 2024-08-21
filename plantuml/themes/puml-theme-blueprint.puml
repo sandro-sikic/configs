@@ -150,5 +150,5 @@ skinparam UseCaseStereoType {
 }
 
 skinparam roundCorner 10
-skinparam dpi 500
+skinparam dpi 80
 skinparam componentStyle rectangle
